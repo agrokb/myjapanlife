@@ -1,0 +1,7 @@
+<%= @data.each do |list| %>
+<%= list.title %>
+<% end %>
+
+<%= form_with model:@daily do |f| %>
+<%=  f.text_field :title %>
+<%end%>
